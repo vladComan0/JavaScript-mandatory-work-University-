@@ -1,0 +1,19 @@
+.background{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+div{
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+}
+button{
+    float: right;
+    display: flex;
+}

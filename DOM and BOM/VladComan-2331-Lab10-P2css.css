@@ -1,0 +1,12 @@
+div{
+    float: left;
+    width: 70px;
+    height: 30px;
+    background-color: black;
+}
+.bottom{
+    float: right;
+    background-color: grey;
+    width: 150px;
+    height: 100px;
+}

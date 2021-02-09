@@ -1,0 +1,14 @@
+body{
+	font-family: "Arial", "Times New Roman";
+	font-size: 15px;
+	background-color: #333333;
+	color: #00EEEE;
+}
+
+div{
+	display: block;
+	padding: 10px;
+	color: lime;
+	margin: 3px;
+	background-color: #555555;
+}

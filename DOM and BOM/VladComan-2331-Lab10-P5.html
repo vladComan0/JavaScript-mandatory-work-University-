@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="VladComan-2331-Lab10-P5css.css">
+    <script src="VladComan-2331-Lab10-P5js.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div id="image" style="position:absolute; left:200px; top:200px; width:100px; z-index: 1; visibility:visible">
+        <img src="https://c0.klipartz.com/pngpicture/561/634/gratis-png-hamsters-thumbnail.png" width="100" height="100" ondrag="startDragging()">
+        </div>
+        <div class="wall" id="1"></div>
+        <div class="wall" id="2"></div>
+        <div class="road" id="3"></div>
+        <div class="road" id="4"></div>
+        <div class="wall" id="5"></div>
+        <div class="wall" id="6"></div>
+        <div class="road" id="7"></div>
+        <div class="wall" id="8"></div>
+        <div class="road" id="9"></div>
+        <div class="wall" id="10"></div>
+
+        <div class="wall" id="11"></div>
+        <div class="wall" id="12"></div>
+        <div class="road" id="13"></div>
+        <div class="wall" id="14"></div>
+        <div class="road" id="15"></div>
+        <div class="road" id="16"></div>
+        <div class="road" id="17"></div>
+        <div class="wall" id="18"></div>
+        <div class="road" id="19"></div>
+        <div class="road" id="20"></div>
+
+        <div class="road" id="21"></div>
+        <div class="road" id="22"></div>
+        <div class="wall" id="23"></div>
+        <div class="road" id="24"></div>
+        <div class="road" id="25"></div>
+        <div class="wall" id="26"></div>
+        <div class="road" id="27"></div>
+        <div class="wall" id="28"></div>
+        <div class="wall" id="29"></div>
+        <div class="road" id="30"></div>
+
+        <div class="wall" id="31"></div>
+        <div class="road" id="32"></div>
+        <div class="road" id="33"></div>
+        <div class="road" id="34"></div>
+        <div class="road" id="35"></div>
+        <div class="wall" id="36"></div>
+        <div class="road" id="37"></div>
+        <div class="road" id="38"></div>
+        <div class="road" id="39"></div>
+        <div class="wall" id="40"></div>
+
+        <div class="wall" id="41"></div>
+        <div class="wall" id="42"></div>
+        <div class="wall" id="43"></div>
+        <div class="wall" id="44"></div>
+        <div class="road" id="45"></div>
+        <div class="wall" id="46"></div>
+        <div class="wall" id="47"></div>
+        <div class="road" id="48"></div>
+        <div class="wall" id="49"></div>
+        <div class="wall" id="50"></div>
+
+        <div class="wall" id="51"></div>
+        <div class="road" id="52"></div>
+        <div class="road" id="53"></div>
+        <div class="road" id="54"></div>
+        <div class="road" id="55"></div>
+        <div class="road" id="56"></div>
+        <div class="road" id="57"></div>
+        <div class="wall" id="58"></div>
+        <div class="road" id="59"></div>
+        <div class="road" id="60"></div>
+
+        <div class="wall" id="61"></div>
+        <div class="road" id="62"></div>
+        <div class="wall" id="63"></div>
+        <div class="wall" id="64"></div>
+        <div class="road" id="65"></div>
+        <div class="wall" id="66"></div>
+        <div class="wall" id="67"></div>
+        <div class="road" id="68"></div>
+        <div class="road" id="69"></div>
+        <div class="wall" id="70"></div>
+        
+        <div class="road" id="71"></div>
+        <div class="road" id="72"></div>
+        <div class="road" id="73"></div>
+        <div class="road" id="74"></div>
+        <div class="wall" id="75"></div>
+        <div class="wall" id="76"></div>
+        <div class="road" id="77"></div>
+        <div class="road" id="78"></div>
+        <div class="road" id="79"></div>
+        <div class="wall" id="80"></div>
+
+        <div class="road" id="81"></div>
+        <div class="wall" id="82"></div>
+        <div class="wall" id="83"></div>
+        <div class="road" id="84"></div>
+        <div class="road" id="85"></div>
+        <div class="road" id="86"></div>
+        <div class="road" id="87"></div>
+        <div class="wall" id="88"></div>
+        <div class="road" id="89"></div>
+        <div class="wall" id="90"></div>
+    </div>
+    <div id="my_div" class="right"></div>
+    <script>
+	
+        var IE = document.all?true:false;
+        
+        if (!IE){
+            document.captureEvents(Event.MOUSEMOVE);
+            document.captureEvents(Event.MOUSEDOWN);
+            document.captureEvents(Event.MOUSEUP);
+        }
+        
+        
+        document.onmousemove = getMouseXY;
+        document.onmousedown = startDragging;
+        document.onmouseup = stopDragging;
+        
+        function getMouseXY(e) {
+        
+        
+            if (IE) {
+                tempX = event.clientX + document.body.scrollLeft;
+                tempY = event.clientY + document.body.scrollTop;
+            }
+            else {
+                tempX = e.pageX;
+                tempY = e.pageY;
+            }
+        
+            f1(tempX, tempY);
+        }
+        
+        </script>
+</body>
+</html>

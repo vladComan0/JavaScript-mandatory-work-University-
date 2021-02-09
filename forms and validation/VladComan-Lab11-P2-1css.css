@@ -1,0 +1,12 @@
+body{
+	font-family: "Arial", "Times New Roman";
+	font-size: 15px;
+	background-color: #333333;
+	color: #00EEEE;
+}
+#result{
+    margin: 30px;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
